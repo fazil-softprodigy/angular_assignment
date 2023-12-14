@@ -10,13 +10,25 @@ import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
 import { Week4assignmentComponent } from './week4assignment/week4assignment.component';
 import { HttpInterceptors } from './services/http.interceptor';
+import { SharedComponent } from './components/shared/shared.component';
+import { AdminModuleComponent } from './modules/admin-module/admin-module.component';
+import { UserModuleComponent } from './modules/user-module/user-module.component';
+import { WeekLastComponent } from './week-last/week-last.component';
+import { LoginComponent } from './login/login.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
 @NgModule({
   declarations: [
     AppComponent,
     // Assignment2,
     HomeComponent,
     NavbarComponent,
-    Week4assignmentComponent
+    Week4assignmentComponent,
+    SharedComponent,
+    AdminModuleComponent,
+    UserModuleComponent,
+    WeekLastComponent,
+    LoginComponent,
+    UserDetailsComponent
   ],
   imports: [
     BrowserModule,
