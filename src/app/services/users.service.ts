@@ -8,9 +8,9 @@ import { GET_USER, USER_TYPE } from '../interfaces/users.interfaces';
 })
 export class UsersService {
   users: GET_USER[] = [
-    { id: 1, name: 'Amit Thakur', email: 'amit@gmail.com', verified:false },
-    { id: 2, name: 'Nashra Mirza', email: 'nashra@gmail.com', verified:true },
-    { id: 3, name: 'Fazil Bhat', email: 'fazil@gmail.com',verified:true }
+    { id: 1, name: 'Fazil Shafi', email: 'fs@gmail.com',verified:true },
+    { id: 2, name: 'Amit Thakur', email: 'at@gmail.com', verified:false },
+    { id: 3, name: 'Nashra Mirza', email: 'nm@gmail.com', verified:true }
   ]
 
   constructor(

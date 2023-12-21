@@ -1,0 +1,32 @@
+.login-container {
+    margin-top: 130px;
+  }
+  .card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-color: yellow;
+  }
+  .card-header {
+    background-color: yellow;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    color: black;
+  }
+  .card-body {
+    padding: 40px;
+  }
+  .form-group {
+    margin-bottom: 25px;
+  }
+  .form-control {
+    border-radius: 5px;
+  }
+  .btn-login {
+    background-color: yellow;
+    border: none;
+    border-radius: 5px;
+  }
+  .btn-login:hover {
+    background-color: yellowgreen;
+  }

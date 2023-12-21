@@ -1,0 +1,28 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">S.no</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Mobile</th>
+        <th scope="col">Zip</th>
+        <th scope="col">Address</th>
+        <th scope="col">City</th>
+        <th scope="col">State</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users; let i = index">
+        <td>{{i+1}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.mobile}}</td>
+        <td>{{user.zip}}</td>
+        <td>{{user.address}}</td>
+        <td>{{user.city}}</td>
+        <td>{{user.state}}</td>
+        
+       
+      </tr>
+    </tbody>
+  </table>

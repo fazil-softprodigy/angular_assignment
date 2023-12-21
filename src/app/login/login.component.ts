@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 interface LOGIN_INTERFACE {
   email: string;
   password: string;
+  role: string;
 }
 
 @Component({
@@ -17,6 +18,7 @@ export class LoginComponent {
   loginDetails: LOGIN_INTERFACE = {
     email: '',
     password: '',
+    role: 'admin',
   };
 
   Login() {

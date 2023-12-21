@@ -1,0 +1,15 @@
+.Assignment3Container {
+    gap: 1%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 35% 1fr;
+    margin-top: 10px;
+}
+
+.productForm {
+    padding: 10%;
+}
+
+.productList {
+    margin-top: 10%;
+}

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Assignment2": {
+    "practice1": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/assignment2",
+            "outputPath": "dist/practice1",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Assignment2:build:production"
+              "browserTarget": "practice1:build:production"
             },
             "development": {
-              "browserTarget": "Assignment2:build:development"
+              "browserTarget": "practice1:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Assignment2:build"
+            "browserTarget": "practice1:build"
           }
         },
         "test": {
@@ -96,6 +96,6 @@
     }
   },
   "cli": {
-    "analytics": "aa485324-a2c1-44d8-b2d0-3d8c6281c5de"
+    "analytics": "9deff7d7-1575-4ed6-bec9-22c01ad35a1c"
   }
 }
