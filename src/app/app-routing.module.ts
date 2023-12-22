@@ -11,6 +11,8 @@ import { FilterPipeComponent } from './FilterPipe/FilterPipe.component';
 import { Assignment5Component } from './Assignment5/Assignment5.component';
 import { RoleGuard } from './guard/role.guard';
 import { UnauthorizedComponent } from './unauthorized/unauthorized.component';
+import { RoleBasedAuthComponent } from './role-based-auth/role-based-auth.component';
+import { QueryParamsComponent } from './query-params/query-params.component';
 
 const routes: Routes = [
   {
@@ -39,14 +41,14 @@ const routes: Routes = [
     component: DebouncingComponent,
   },
   {
-    path: 'Assignment5',
+    path: 'auth-guard',
     component: Assignment5Component,
     canActivate: [AuthGuard]
   } ,
   {
     path: 'Assignment5/:id',
     component: UserDetailsComponent,
-    canActivate: [AuthGuard, RoleGuard]
+    canActivate: [AuthGuard]
   } 
   ,
   {
@@ -57,6 +59,15 @@ const routes: Routes = [
     path:'unauthorized',
     component: UnauthorizedComponent
   },
+  {
+    path: 'role-based-auth',
+    component: RoleBasedAuthComponent,
+    canActivate: [AuthGuard, RoleGuard]
+  },
+  {
+    path:'query-params',
+    loadChildren:()=>import("./shared-module/shared-module.module").then((m)=>m.SharedModuleModule)
+  }
 ];
 
 @NgModule({

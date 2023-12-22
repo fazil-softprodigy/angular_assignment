@@ -17,6 +17,9 @@ import { DebouncingComponent } from './Debouncing/Debouncing.component';
 import { Assignment5Component } from './Assignment5/Assignment5.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { LoginComponent } from './login/login.component';
+import { RoleBasedAuthComponent } from './role-based-auth/role-based-auth.component';
+import { QueryParamsComponent } from './query-params/query-params.component';
+
 
 @NgModule({
   declarations: [
@@ -33,6 +36,8 @@ import { LoginComponent } from './login/login.component';
     Assignment5Component,
     UserDetailsComponent,
     LoginComponent,
+    RoleBasedAuthComponent,
+    // QueryParamsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [
